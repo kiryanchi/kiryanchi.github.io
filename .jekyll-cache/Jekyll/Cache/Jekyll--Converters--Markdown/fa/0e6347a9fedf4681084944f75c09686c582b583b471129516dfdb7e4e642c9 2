@@ -1,0 +1,37 @@
+I"6<p>Hey There, Today we will see on how to unlock the superpowers of our devlopr-jekyll blog. We will be using Siteleaf CMS to modify content of our blog.</p>
+
+<p>Note : If you have not created your blog yet. Create Your Blog , then comeback later</p>
+
+<p>Login to <a href="https://www.siteleaf.com/">Siteleaf</a></p>
+
+<p><img src="/assets/img/posts/siteleaf/1.png" alt="Using Siteleaf " class="img-fluid" /></p>
+
+<p>Select Connect with Github, connect existing repository:</p>
+
+<p><img src="/assets/img/posts/siteleaf/2.png" alt="Using Siteleaf " class="img-fluid" /></p>
+
+<p>Select the repository of your devlopr-jekyll blog:</p>
+
+<p><img src="/assets/img/posts/siteleaf/3.png" alt="Using Siteleaf " class="img-fluid" /></p>
+
+<p>Connect and Create Site:</p>
+
+<p><img src="/assets/img/posts/siteleaf/4.png" alt="Using Siteleaf " class="img-fluid" /></p>
+
+<p>After successful import, You will be redirected to manage dashboard :</p>
+
+<p><img src="/assets/img/posts/siteleaf/5.png" alt="Using Siteleaf " class="img-fluid" /></p>
+
+<p>But before making any changes to our blog, we need to change our current Siteleaf membership plan to Free Plan (For Developers)</p>
+
+<p><img src="/assets/img/posts/siteleaf/6.png" alt="Using Siteleaf " class="img-fluid" /></p>
+
+<p>Select Free Plan :</p>
+
+<p><img src="/assets/img/posts/siteleaf/8.png" alt="Using Siteleaf " class="img-fluid" /></p>
+
+<p>Congrats ! Your New Admin Panel for your devlopr-jekyll blog is ready to make any changes to your blog :D</p>
+
+<p><img src="/assets/img/posts/siteleaf/9.png" alt="Using Siteleaf " class="img-fluid" /></p>
+
+:ET
