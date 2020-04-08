@@ -1,4 +1,30 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-08T20:34:23+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">잡동사니 기랸씨</title><subtitle>누구나 하나쯤은 가지고 있는 잡동사니, 친근하게 다가가고 싶은 잡동사니 기랸씨입니다!</subtitle><author><name>Kihyun Park</name></author><entry><title type="html">Using Siteleaf CMS with devlopr-jekyll Blog</title><link href="http://localhost:4000/guides/2019/05/22/using-siteleaf/" rel="alternate" type="text/html" title="Using Siteleaf CMS with devlopr-jekyll Blog" /><published>2019-05-22T18:05:23+09:00</published><updated>2019-05-22T18:05:23+09:00</updated><id>http://localhost:4000/guides/2019/05/22/using-siteleaf</id><content type="html" xml:base="http://localhost:4000/guides/2019/05/22/using-siteleaf/">&lt;p&gt;Hey There, Today we will see on how to unlock the superpowers of our devlopr-jekyll blog. We will be using Siteleaf CMS to modify content of our blog.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>잡동사니 기랸씨</title>
+    <description>누구나 하나쯤은 가지고 있는 잡동사니, 친근하게 다가가고 싶은 잡동사니 기랸씨입니다!</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 08 Apr 2020 21:09:26 +0900</pubDate>
+    <lastBuildDate>Wed, 08 Apr 2020 21:09:26 +0900</lastBuildDate>
+    <generator>Jekyll v4.0.0</generator>
+    
+      <item>
+        <title>Programmer working in Office</title>
+        <description>&lt;p&gt;This is a sample post&lt;/p&gt;
+</description>
+        <pubDate>Wed, 22 May 2019 18:05:23 +0900</pubDate>
+        <link>http://localhost:4000/guides/2019/05/22/plugged-in/</link>
+        <guid isPermaLink="true">http://localhost:4000/guides/2019/05/22/plugged-in/</guid>
+        
+        
+        <category>guides</category>
+        
+      </item>
+    
+      <item>
+        <title>Using Siteleaf CMS with devlopr-jekyll Blog</title>
+        <description>&lt;p&gt;Hey There, Today we will see on how to unlock the superpowers of our devlopr-jekyll blog. We will be using Siteleaf CMS to modify content of our blog.&lt;/p&gt;
 
 &lt;p&gt;Note : If you have not created your blog yet. Create Your Blog , then comeback later&lt;/p&gt;
 
@@ -32,7 +58,21 @@
 
 &lt;p&gt;Congrats ! Your New Admin Panel for your devlopr-jekyll blog is ready to make any changes to your blog :D&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/posts/siteleaf/9.png&quot; alt=&quot;Using Siteleaf &quot; class=&quot;img-fluid&quot; /&gt;&lt;/p&gt;</content><author><name>Sujay Kundu</name></author><category term="guides" /><summary type="html">Hey There, Today we will see on how to unlock the superpowers of our devlopr-jekyll blog. We will be using Siteleaf CMS to modify content of our blog.</summary></entry><entry><title type="html">Programmer working in Office</title><link href="http://localhost:4000/guides/2019/05/22/plugged-in/" rel="alternate" type="text/html" title="Programmer working in Office" /><published>2019-05-22T18:05:23+09:00</published><updated>2019-05-22T18:05:23+09:00</updated><id>http://localhost:4000/guides/2019/05/22/plugged-in</id><content type="html" xml:base="http://localhost:4000/guides/2019/05/22/plugged-in/">&lt;p&gt;This is a sample post&lt;/p&gt;</content><author><name>John Doe</name></author><category term="guides" /><summary type="html">This is a sample post</summary></entry><entry><title type="html">How to deploy devlopr-jekyll Blog using Github Pages and Travis</title><link href="http://localhost:4000/guides/2019/05/21/deploy-blog-using-devlopr-jekyll-and-github-pages/" rel="alternate" type="text/html" title="How to deploy devlopr-jekyll Blog using Github Pages and Travis" /><published>2019-05-21T18:05:23+09:00</published><updated>2019-05-21T18:05:23+09:00</updated><id>http://localhost:4000/guides/2019/05/21/deploy-blog-using-devlopr-jekyll-and-github-pages</id><content type="html" xml:base="http://localhost:4000/guides/2019/05/21/deploy-blog-using-devlopr-jekyll-and-github-pages/">&lt;p&gt;This guide assumes that you already have created your blog and tested locally. If not please follow this tutorial : &lt;a href=&quot;https://devlopr.netlify.com/guides/2017/11/19/build-a-blog-using-devlopr-jekyll&quot;&gt;Create a Blog using devlopr jekyll&lt;/a&gt;. Then come back and proceed with the deployment process.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/siteleaf/9.png&quot; alt=&quot;Using Siteleaf &quot; class=&quot;img-fluid&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 22 May 2019 18:05:23 +0900</pubDate>
+        <link>http://localhost:4000/guides/2019/05/22/using-siteleaf/</link>
+        <guid isPermaLink="true">http://localhost:4000/guides/2019/05/22/using-siteleaf/</guid>
+        
+        
+        <category>guides</category>
+        
+      </item>
+    
+      <item>
+        <title>How to deploy devlopr-jekyll Blog using Github Pages and Travis</title>
+        <description>&lt;p&gt;This guide assumes that you already have created your blog and tested locally. If not please follow this tutorial : &lt;a href=&quot;https://devlopr.netlify.com/guides/2017/11/19/build-a-blog-using-devlopr-jekyll&quot;&gt;Create a Blog using devlopr jekyll&lt;/a&gt;. Then come back and proceed with the deployment process.&lt;/p&gt;
 
 &lt;p&gt;In this Guide, we are using Github Pages and Travis CI for deploying our blog. Sometimes Github Pages does not support external third party plugins. In that case we deploy our blog using Travis CI, it automatically builds our website and pushes the static files of the site to a deployment branch. Which then Github Pages uses to render the site. Hope you get it :P !&lt;/p&gt;
 
@@ -117,4 +157,16 @@
 
 &lt;p&gt;&lt;img src=&quot;/assets/img/posts/d6.png&quot; alt=&quot;deploy using travis&quot; class=&quot;img-fluid&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Done ! Enjoy your brand new devlopr-jekyll blog. You can visit the site at https://yourusername.github.io&lt;/p&gt;</content><author><name>Sujay Kundu</name></author><category term="guides" /><summary type="html">This guide assumes that you already have created your blog and tested locally. If not please follow this tutorial : Create a Blog using devlopr jekyll. Then come back and proceed with the deployment process.</summary></entry></feed>
+&lt;p&gt;Done ! Enjoy your brand new devlopr-jekyll blog. You can visit the site at https://yourusername.github.io&lt;/p&gt;
+</description>
+        <pubDate>Tue, 21 May 2019 18:05:23 +0900</pubDate>
+        <link>http://localhost:4000/guides/2019/05/21/deploy-blog-using-devlopr-jekyll-and-github-pages/</link>
+        <guid isPermaLink="true">http://localhost:4000/guides/2019/05/21/deploy-blog-using-devlopr-jekyll-and-github-pages/</guid>
+        
+        
+        <category>guides</category>
+        
+      </item>
+    
+  </channel>
+</rss>
