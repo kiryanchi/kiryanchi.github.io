@@ -1,13 +1,29 @@
 language: ruby
 cache: bundler
-gemfile: Gemfile
-before_install:
-  - gem install bundler
-script:
-  - bundle exec jekyll algolia --config _config.yml
+
+# Travis will build the site from gh-pages branch
+# and deploy the content to master branch
+# use gh-pages branch to serve for github pages
+# master branch will be used for deployment
+
 branches:
   only:
-    # Change this to gh-pages if you're deploying using the gh-pages branch
-    - master
-rvm:
- - 2.4
+  - gh-pages
+script:
+  - JEKYLL_ENV=production bundle exec jekyll build --destination site
+
+# You need to generate a Personal Access Token
+# https://github.com/settings/tokens
+# Add this token in environment variable GITHUB_TOKEN in Travis CI repo settings
+
+deploy:
+  provider: pages
+  local-dir: ./site
+  target-branch: master
+  email: deploy@travis-ci.org
+  name: Deployment Bot
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  keep-history: true
+  on:
+    branch: gh-pages
