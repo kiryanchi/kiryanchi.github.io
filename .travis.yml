@@ -31,7 +31,7 @@ deploy:
 # Generate your secure token with the travis gem:
 # get Github token from your Travis CI profile page
   gem install travis
-  travis encrypt 'GIT_NAME="YOUR_USERNAME" GIT_EMAIL="YOUR_EMAIL" GH_TOKEN=YOUR_TOKEN' --add env.global --com
+  travis encrypt 'GIT_NAME="kiryanchi" GIT_EMAIL="kiryanchi@naver.com" GH_TOKEN=ffd2e9315c91e61b76548544338d918a003a1325' --add env.global --com
 
 # env:
 #   global:
