@@ -5,9 +5,129 @@
     <description>누구나 하나쯤은 가지고 있는 잡동사니, 친근하게 다가가고 싶은 잡동사니 기랸씨입니다!</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 11 Apr 2020 21:50:48 +0900</pubDate>
-    <lastBuildDate>Sat, 11 Apr 2020 21:50:48 +0900</lastBuildDate>
+    <pubDate>Sat, 11 Apr 2020 23:03:13 +0900</pubDate>
+    <lastBuildDate>Sat, 11 Apr 2020 23:03:13 +0900</lastBuildDate>
     <generator>Jekyll v4.0.0</generator>
+    
+      <item>
+        <title>Pyinstaller &quot;pyi_rth_pkgres”, &quot;valueerror&quot; 에러 해결법</title>
+        <description>&lt;h1 id=&quot;pyinstaller-pyi_rth_pkgres-valueerror-에러-해결법&quot;&gt;Pyinstaller “pyi_rth_pkgres”, “valueerror” 에러 해결법&lt;/h1&gt;
+
+&lt;h3 id=&quot;프로그램-작성-당시-개발환경&quot;&gt;프로그램 작성 당시 개발환경&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Windows 10&lt;br /&gt;
+Pycharm Professional Edition&lt;br /&gt;
+Python 3.8.2 venv&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;삼촌을 도와 간단한 알바를 하던 중 &lt;a href=&quot;https://github.com/kiryanchi/excelphotoautomatic/&quot;&gt;엑셀에 사진을 넣어야 하는 단순 반복 작업&lt;/a&gt;이 있어서 Python을 사용해 프로그램을 만든 후,&lt;/p&gt;
+
+&lt;p&gt;Pyinstaller 를 사용해 exe 파일로 만들려고 했다.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pyinstaller --onefile main.py
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;그러나 뿜어오는 Error Message&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Failed to execute script pyi_rth_pkgres
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;구글신의 힘을 빌려 검색을 해보니 pyinstaller 삭제 후, dev 버전을 다운받으라고 했다.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pip uninstall pyinstaller
+pip install https://github.com/pyinstaller/pyinstaller/archive/develop.zip
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;그러나 이번엔 다른 문제에 부딪혔다.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;valueerror: can't mix absolute and relative paths
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;대충 해석하자면 절대경로와 상대경로를 섞어쓸 수 없다는 내용인데,&lt;/p&gt;
+
+&lt;p&gt;구글에 검색해도 마땅히 해결법을 찾지 못 해 이리저리 자료를 찾던 중 &lt;a href=&quot;https://github.com/pyinstaller/pyinstaller&quot;&gt;pyinstaller github&lt;/a&gt;에서 정답을 찾았다.&lt;/p&gt;
+
+&lt;h4 id=&quot;문제는-바로-내-파이썬-버전의-문제&quot;&gt;문제는 바로 내 &lt;strong&gt;&lt;em&gt;파이썬 버전의 문제&lt;/em&gt;&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;현재 2020년 4월 11일자 파이썬 최신 버전은 3.8.2 버전이다.&lt;/p&gt;
+
+&lt;p&gt;그러나 pyinstaller 는 파이썬 버전 3.7까지 지원한다.&lt;/p&gt;
+
+&lt;p&gt;구글 검색을 통해 파이썬 3.7 버전을 설치한 뒤 파이참에서 새 프로젝트를 파이썬 3.7 버전으로 가상환경을 설치한 뒤 다시 pyinstaller 를 설치하고 exe 파일을 만들었더니 정상 작동을 확인했다.&lt;/p&gt;
+
+&lt;p&gt;혹시나 macOS 에서 파이썬 버전을 관리하고 싶다면 homebrew 를 사용하는 편이 낫다.&lt;/p&gt;
+
+&lt;h1 id=&quot;결론&quot;&gt;결론&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/pyinstaller/pyinstaller&quot;&gt;pyinstaller github&lt;/a&gt; 에 들어가서 지원하는 파이썬 버전을 확인하고 내 파이썬 버전과 비교해보자.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 11 Apr 2020 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/python/2020/04/11/test2/</link>
+        <guid isPermaLink="true">http://localhost:4000/python/2020/04/11/test2/</guid>
+        
+        
+        <category>python</category>
+        
+      </item>
+    
+      <item>
+        <title>Pyinstaller &quot;pyi_rth_pkgres”, &quot;valueerror&quot; 에러 해결법</title>
+        <description>&lt;h1 id=&quot;pyinstaller-pyi_rth_pkgres-valueerror-에러-해결법&quot;&gt;Pyinstaller “pyi_rth_pkgres”, “valueerror” 에러 해결법&lt;/h1&gt;
+
+&lt;h3 id=&quot;프로그램-작성-당시-개발환경&quot;&gt;프로그램 작성 당시 개발환경&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Windows 10&lt;br /&gt;
+Pycharm Professional Edition&lt;br /&gt;
+Python 3.8.2 venv&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;삼촌을 도와 간단한 알바를 하던 중 &lt;a href=&quot;https://github.com/kiryanchi/excelphotoautomatic/&quot;&gt;엑셀에 사진을 넣어야 하는 단순 반복 작업&lt;/a&gt;이 있어서 Python을 사용해 프로그램을 만든 후,&lt;/p&gt;
+
+&lt;p&gt;Pyinstaller 를 사용해 exe 파일로 만들려고 했다.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pyinstaller --onefile main.py
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;그러나 뿜어오는 Error Message&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Failed to execute script pyi_rth_pkgres
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;구글신의 힘을 빌려 검색을 해보니 pyinstaller 삭제 후, dev 버전을 다운받으라고 했다.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pip uninstall pyinstaller
+pip install https://github.com/pyinstaller/pyinstaller/archive/develop.zip
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;그러나 이번엔 다른 문제에 부딪혔다.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;valueerror: can't mix absolute and relative paths
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;대충 해석하자면 절대경로와 상대경로를 섞어쓸 수 없다는 내용인데,&lt;/p&gt;
+
+&lt;p&gt;구글에 검색해도 마땅히 해결법을 찾지 못 해 이리저리 자료를 찾던 중 &lt;a href=&quot;https://github.com/pyinstaller/pyinstaller&quot;&gt;pyinstaller github&lt;/a&gt;에서 정답을 찾았다.&lt;/p&gt;
+
+&lt;h4 id=&quot;문제는-바로-내-파이썬-버전의-문제&quot;&gt;문제는 바로 내 &lt;strong&gt;&lt;em&gt;파이썬 버전의 문제&lt;/em&gt;&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;현재 2020년 4월 11일자 파이썬 최신 버전은 3.8.2 버전이다.&lt;/p&gt;
+
+&lt;p&gt;그러나 pyinstaller 는 파이썬 버전 3.7까지 지원한다.&lt;/p&gt;
+
+&lt;p&gt;구글 검색을 통해 파이썬 3.7 버전을 설치한 뒤 파이참에서 새 프로젝트를 파이썬 3.7 버전으로 가상환경을 설치한 뒤 다시 pyinstaller 를 설치하고 exe 파일을 만들었더니 정상 작동을 확인했다.&lt;/p&gt;
+
+&lt;p&gt;혹시나 macOS 에서 파이썬 버전을 관리하고 싶다면 homebrew 를 사용하는 편이 낫다.&lt;/p&gt;
+
+&lt;h1 id=&quot;결론&quot;&gt;결론&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/pyinstaller/pyinstaller&quot;&gt;pyinstaller github&lt;/a&gt; 에 들어가서 지원하는 파이썬 버전을 확인하고 내 파이썬 버전과 비교해보자.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 11 Apr 2020 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/python/2020/04/11/pythontest/</link>
+        <guid isPermaLink="true">http://localhost:4000/python/2020/04/11/pythontest/</guid>
+        
+        
+        <category>python</category>
+        
+      </item>
     
       <item>
         <title>Pyinstaller &quot;pyi_rth_pkgres”, &quot;valueerror&quot; 에러 해결법</title>

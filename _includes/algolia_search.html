@@ -11,7 +11,10 @@
 }
 
 .ais-hits--item{
-    float:left;
+    display: block;
+    position: relative;
+    left: 27.5%;
+    float: none;
  }
  #search-container{
      width: 100%;
@@ -30,8 +33,8 @@
     search.addWidget(
       instantsearch.widgets.searchBox({
         container: '#search-searchbar',
-        placeholder: 'Search into posts...',
-        poweredBy: true
+        placeholder: '검색할 단어를 입력해주세요',
+        poweredBy: false
       })
     );
 
@@ -42,9 +45,9 @@
           item: function(hit) {
             return `
                         <div class="card blog-post">
-                            <img class="card-img-top" src="${ hit.thumbnail }" alt="${ hit.title }">
+                            
                             <div class="card-body center">
-                                <img src="{{site.url}}{{site.baseurl}}/assets/img/{{ site.author_logo }}" class="author-profile-img">
+                                
                                 <h4 class="card-title">${ hit.title }</h4>
 
                                 <h6 class="card-subtitle mb-2 text-muted">${moment.unix(hit.date).format('MMM D, YYYY')}</h6>
