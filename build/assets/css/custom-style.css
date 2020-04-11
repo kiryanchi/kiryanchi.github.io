@@ -7,3 +7,19 @@ blockquote {
     background: whitesmoke;
     border: 1px solid;
 }
+.highlight code {
+    color: #000000;
+    font-family: D2Coding;
+    font-size: 16px;
+}
+.card-body blockquote {
+    color: #000000;
+    font-family: D2Coding;
+}
+html[data-theme="dark"] {
+    --bold-color: #e2e2e2;
+    --highlight-color: #e2e2e2;
+    --light-text-color: #e2e2e2;
+    --main-text-color: #e2e2e2;
+    --medium-text-color: #e2e2e2;
+}
