@@ -89,7 +89,10 @@ show_author_project_details: false
 algolia:
   application_id: U7YXE6JR1D
   index_name: kiryanchi-github # You can replace that with whatever name you want
-  files_to_exclude: []
+  files_to_exclude:
+    - categories/*
+    - search.md
+    - blog/*
   nodes_to_index: 'article'
   search_only_api_key: d36be1652e26fdbec52ded53ffb80807
 
