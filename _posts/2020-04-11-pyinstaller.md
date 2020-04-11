@@ -3,7 +3,7 @@ layout: post
 title: Pyinstaller "pyi_rth_pkgres”, "valueerror" 에러 해결법
 author: 잡동사니 기랸
 date: '2020-04-11'
-category: Python
+category: python
 summary: Pyinstaller 사용시 에러 해결법
 ---
 
