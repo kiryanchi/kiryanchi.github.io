@@ -93,6 +93,7 @@ algolia:
     - categories/*
     - search.md
     - blog/*
+    - about.*
   nodes_to_index: 'article'
   search_only_api_key: d36be1652e26fdbec52ded53ffb80807
 
