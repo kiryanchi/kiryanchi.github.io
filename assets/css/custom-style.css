@@ -45,3 +45,6 @@ html[data-theme="dark"] {
     color: #ffffff;
     --link-color: #ffffff;
 }
+div#blog-post-container .col-lg-8 {
+    margin: 0 auto;
+}
