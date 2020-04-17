@@ -1,167 +1,63 @@
-title: 잡동사니 기랸씨
-subtitle: kiryanchi coding page
-description: >- # this means to ignore newlines until "baseurl:"
-  누구나 하나쯤은 가지고 있는 잡동사니, 친근하게 다가가고 싶은 잡동사니 기랸씨입니다!
+# Site Info
+title: Codinfox Lanyon
+tagline: 'A Jekyll theme based on Lanyon'
+description: 'A Jekyll theme adapted from <a href="http://lanyon.getpoole.com/" target="_blank">Lanyon</a>. Made by <a href="http://codinfox.github.io" target="_blank">@codinfox</a>.'
+baseurl: "/lanyon"
+url: http://codinfox.github.io
+logo: '/public/logo.png'
 
-url: "https://kiryanchi.github.io" # the base hostname & protocol for your site, e.g. https://example.github.io
-baseurl: "" # the subpath of your site, e.g. /blog
-
-urls:
-    - text: About Me
-      url: /about
-    - text: Blog
-      url: /blog
-#    - text: Gallery
-#      url: /gallery
-
-# Edit these details
-
-author_logo: profile.png
-author: Kihyun Park
-author_bio: 누구나 하나쯤은 가지고 있는 잡동사니, 친근하게 다가가고 싶은 잡동사니 기랸씨입니다!
-author_email: "kiryanchi@naver.com"
-author_location: Korea
-author_website_url: "https://kiryanchi.github.io"
-
-author_work_experiences:
-            - company_name: Google
-              company_logo: google.png
-              company_url: https://google.com
-              designation: Software Engineer
-              description: Worked on various Google Products
-              visibility: true
-            - company_name: Microsoft
-              company_logo: microsoft.png
-              company_url: https://microsoft.com
-              designation: Azure Developer
-              description: Worked on various Azure Cloud Products
-              visibility: false
-
-author_education_details:
-              - college_logo: mit.png
-                college_name: MIT
-                college_url: https://mit.org
-                college_degree: CS Engineer
-                description: Bachelor of Technology
-                visibility: true
-
-author_project_details:
-              - project_thumbnail: gamershub.png
-                project_title: Gamers Hub
-                project_description: A Platform built for Gamers and Game Devs
-                project_url: https://gamershub.in
-                visibility: true
-              - project_thumbnail: hack4r.PNG
-                project_title: Hack4r
-                project_description: A Platform built for Hackers and Penetration Testers
-                project_url: https://hack4r.com
-                visibility: true
-
-# social links
-instagram_username: kir_4n
-
-#for comments using disqus
-disqus_shortname: kiryanchi-github
-
-# wakatime username (coding activity)
-wakatime_username: kiryanchi
-
-# mailchimp embedded form url (newsletter):
-mailchimp_form_url: 
-
-# formspree (contact form)
-formspree_email: kiryanchi@naver.com
-
-# syntax highlighter
+# Site configurations
+gems:
+  - jekyll-paginate
 markdown: kramdown
-highlighter: rouge
+kramdown:
+  input: GFM
+excerpt_separator: "<!-- more -->"
+sass:
+  style: compressed
+  sass_dir: _scss    
+paginate: 5
+paginate_path: '/blog/page:num'
 permalink: pretty
 
-# google analytics
-google_analytics: UA-46783401-10
+version: 1.0.0
 
-# Choose what to show ( can be true or false)
-show_author_work_experiences: false
-show_author_education_details: false
-show_author_project_details: false
+# About/contact
+author:
+  name: Codinfox
+  description: A passionate <strong>developer and researcher</strong>, learning to be a giant.
+  gravatar: 3c2986ad7ac1f2230ea3596f44563328 # md5 hash of your email address
+  contact:
+    linkedin:  https://www.linkedin.com/in/lizhihao
+    github:    https://github.com/codinfox
+    # facebook:  <hide>
+    twitter:   https://twitter.com/Li_Zhihao
+    weibo:     http://weibo.com/41173780
+    email:     http://www.google.com/recaptcha/mailhide/d?k=01I3lZFiZYng9N3QxYEtsDaQ==&c=31wAnZkuKqcG0ATAqJN8Z3ln5kkYLA9TwkGc-IbygpM=
 
-# algolia search
-algolia:
-  application_id: U7YXE6JR1D
-  index_name: kiryanchi-github # You can replace that with whatever name you want
-  files_to_exclude:
-    - categories/*
-    - search.md
-    - blog/*
-    - about.*
-    - index.*
-  nodes_to_index: 'article'
-  search_only_api_key: d36be1652e26fdbec52ded53ffb80807
+# Navigation (2nd level links supported)
+nav:
+  Home:           
+    - '/'
+  Blog:           
+    - '/blog/'
+    - { Categories: '/blog/categories/' }
+    - { Tags: '/blog/tags/' }
+  About:          
+    - '/about/'
+  Github Project: 
+    - 'http://codinfox.github.io/'
 
-# pagination of posts
-paginate: 4
-per_page: 4
-paginate_path: "/blog/page/:num/"
+# Where are tags and categories displayed
+tag_page: '/blog/tags/'
+category_page: '/blog/categories/'
 
-# minify
-# compress_html:
-#   clippings: all
-#   comments: ["<!-- ", " -->"]
-#   endings: all
-#   ignore:
-#     envs: ['development']
+hero:
+  image: /public/img/we_will_be_giants_by_yalestewart.jpg
+  caption: Original Artwork &copy; <a href="http://yalestewart.deviantart.com/art/We-Will-Be-Giants-370176475">Yale Stewart</a>
 
-# Archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#   layout: archive
-#   permalinks:
-#     category: '/category/:name/'
+# Puglins
+mathjax: true # whether support mathjax
+google_analytics_token: 'UA-00000000-1' # leave blank if you don't want google analytics
+disqus_short_name: 'your_short_name' # leave blank if you don't want disqus
 
-# Shop
-collections:
- - products
-
-# Gallery
-defaults:
-  -
-    scope:
-      path: "gallery"
-    values:
-      permalink: /:path/:basename:output_ext
-
-# Build settings
-
-#theme: devlopr
-plugins:
-  - jekyll-feed
-  - jekyll-paginate
-  - jekyll-gist
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-algolia
-  - jekyll-menus
-
-
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-exclude:
-  - .sass-cache/
-  - .jekyll-cache/
-  - gemfiles/
-  - Gemfile
-  - Gemfile.lock
-  - node_modules/
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-
-destination: ./build
