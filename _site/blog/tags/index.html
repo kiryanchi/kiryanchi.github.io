@@ -314,6 +314,21 @@ MathJax.Hub.Config({ tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ], proces
     <label for="sidebar-checkbox" class="sidebar-toggle"></label>
 
     <script>
+      (function(d, h, m){
+          var js, fjs = d.getElementsByTagName(h)[0];
+          if (d.getElementById(m)){return;}
+          js = d.createElement(h); js.id = m;
+          js.onload = function(){
+              window.makerWidgetComInit({
+              position: "left",          
+              widget: "sqjt1s2o0mpkzuwr-khlbciiqx75izkdh-vh3rrkq9vd5qvqvu"                
+          })};
+          js.src = "https://makerwidget.com/js/embed.js";
+          fjs.parentNode.insertBefore(js, fjs)
+      }(document, "script", "dhm"))
+  </script>
+
+    <script>
       (function(document) {
         var toggle = document.querySelector('.sidebar-toggle');
         var sidebar = document.querySelector('#sidebar');
