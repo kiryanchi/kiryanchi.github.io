@@ -45,7 +45,7 @@ nav:
     - '/blog/algorithm/'
     # - { Programmers: '/blog/algorithm/#Programmers'}
   Language:
-    - '/blog/language/cpp'
+    - '/blog/language/'
     - { C++: '/blog/language/cpp/'}
     - { Python: '/blog/language/python/'}
   About Me:          
