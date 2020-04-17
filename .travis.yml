@@ -3,6 +3,7 @@ cache: bundler
 gemfile: Gemfile
 before_install:
   - gem install bundler
+  - rvm get stable
 script:
   - bundle exec jekyll algolia --config _config.yml
 branches:
