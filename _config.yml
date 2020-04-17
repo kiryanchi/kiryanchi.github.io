@@ -9,6 +9,7 @@ logo: '/public/logo.png'
 # Site configurations
 gems:
   - jekyll-paginate
+  - jekyll-algolia
 markdown: kramdown
 kramdown:
   input: GFM
@@ -50,6 +51,8 @@ nav:
     - { Python: '/blog/language/python/'}
   About Me:          
     - '/blog/aboutme/'
+  Search:
+    - '/blog/search/'
 
 # Where are tags and categories displayed
 tag_page: '/blog/tags/'
@@ -65,11 +68,11 @@ google_analytics_token: 'UA-00000000-1' # leave blank if you don't want google a
 disqus_short_name: 'kiryanchi-github' # leave blank if you don't want disqus
 
 # search algolia
-search                   : true # true, false (default)
-search_full_content      : true # true, false (default)
-search_provider          : algolia # lunr (default), algolia, google
 algolia:
   application_id         : U7YXE6JR1D # YOUR_APPLICATION_ID
   index_name             : my_blog # YOUR_INDEX_NAME
   search_only_api_key    : d36be1652e26fdbec52ded53ffb80807 # YOUR_SEARCH_ONLY_API_KEY
   powered_by             : false # true (default), false
+  files_to_exclude       :
+    - about.md
+    - blog/aboutme.html
