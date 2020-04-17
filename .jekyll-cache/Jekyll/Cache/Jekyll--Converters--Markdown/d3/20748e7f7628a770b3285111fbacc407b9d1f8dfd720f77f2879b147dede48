@@ -1,7 +1,5 @@
-I"�&<h2 id="재귀-recursion">재귀 (Recursion)</h2>
+I"�&<h2 id="재귀-recursion">재귀 (Recursion)</h2>
 <p><strong>재귀</strong>를 사용하면 알고리즘을 아름답게 구현할 수 있다.</p>
-
-<p><br /></p>
 
 <h3 id="부분집합-생성하기"><em>부분집합 생성하기</em></h3>
 
@@ -23,8 +21,6 @@
 </code></pre></div></div>
 
 <p>이 구조는 결국 이진 트리가 된다. 포함하는 경우와 포함하지 않는 경우 2 가지로 나뉜다.</p>
-
-<p><br /></p>
 
 <h3 id="순열-생성하기"><strong>순열 생성하기</strong></h3>
 
@@ -63,8 +59,6 @@
 <blockquote>
   <p>아직 이해가 잘 안 가서 나중에 이해가면 추가 설명 필요</p>
 </blockquote>
-
-<p><br /></p>
 
 <h3 id="퇴각검색"><strong>퇴각검색</strong></h3>
 

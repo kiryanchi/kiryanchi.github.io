@@ -4,7 +4,7 @@
  <title>잡동사니 기랸씨</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2020-04-17T16:23:50+09:00</updated>
+ <updated>2020-04-17T16:48:57+09:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>kiryan</name>
@@ -14,13 +14,11 @@
  
  <entry>
    <title>알고리즘 대회를 위한 공부 - 재귀</title>
-   <link href="http://localhost:4000/blog/algorithm/cpp2"/>
+   <link href="http://localhost:4000/blog/c++/cpp2"/>
    <updated>2020-04-12T00:00:00+09:00</updated>
-   <id>http://localhost:4000/blog/algorithm/cpp2</id>
+   <id>http://localhost:4000/blog/c++/cpp2</id>
    <content type="html">&lt;h2 id=&quot;재귀-recursion&quot;&gt;재귀 (Recursion)&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;재귀&lt;/strong&gt;를 사용하면 알고리즘을 아름답게 구현할 수 있다.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;부분집합-생성하기&quot;&gt;&lt;em&gt;부분집합 생성하기&lt;/em&gt;&lt;/h3&gt;
 
@@ -42,8 +40,6 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;이 구조는 결국 이진 트리가 된다. 포함하는 경우와 포함하지 않는 경우 2 가지로 나뉜다.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;순열-생성하기&quot;&gt;&lt;strong&gt;순열 생성하기&lt;/strong&gt;&lt;/h3&gt;
 
@@ -83,8 +79,6 @@
   &lt;p&gt;아직 이해가 잘 안 가서 나중에 이해가면 추가 설명 필요&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
 &lt;h3 id=&quot;퇴각검색&quot;&gt;&lt;strong&gt;퇴각검색&lt;/strong&gt;&lt;/h3&gt;
 
 &lt;p&gt;퇴각 검색(Backtracking)은 비어 있는 해로 탐색을 시작하고, 단계마다 해를 확장해 나가는 방식의 알고리즘이다.&lt;/p&gt;
@@ -116,9 +110,9 @@
  
  <entry>
    <title>알고리즘 대회를 위한 공부 - C++ 기본 문법</title>
-   <link href="http://localhost:4000/blog/algorithm/cpp1"/>
+   <link href="http://localhost:4000/blog/c++/cpp1"/>
    <updated>2020-04-12T00:00:00+09:00</updated>
-   <id>http://localhost:4000/blog/algorithm/cpp1</id>
+   <id>http://localhost:4000/blog/c++/cpp1</id>
    <content type="html">&lt;h2 id=&quot;가장-기본적인-틀&quot;&gt;가장 기본적인 틀&lt;/h2&gt;
 
 &lt;div class=&quot;language-c++ highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;bits/stdc++.h&amp;gt;
@@ -168,9 +162,9 @@
 
 &lt;p&gt;&lt;strong&gt;이때 주의할 점은 C언어 입출력 함수인 scanf, printf 와 섞어서 사용하면 안 된다.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;수를-처리하는-방법&quot;&gt;수를 처리하는 방법&lt;/h2&gt;
-
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;수를-처리하는-방법&quot;&gt;수를 처리하는 방법&lt;/h2&gt;
 
 &lt;h3 id=&quot;정수&quot;&gt;&lt;em&gt;정수&lt;/em&gt;&lt;/h3&gt;
 &lt;p&gt;경진 프로그래밍에서 가장 많이 사용하는 정수 자료형은 &lt;strong&gt;int&lt;/strong&gt; 이다. 만약 int 로 부족하다면 &lt;strong&gt;long long&lt;/strong&gt; 을 사용하면 된다.&lt;/p&gt;
@@ -195,7 +189,6 @@
 &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;123456789&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;kt&quot;&gt;long&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;long&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;long&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;long&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;나머지-연산&quot;&gt;&lt;em&gt;나머지 연산&lt;/em&gt;&lt;/h3&gt;
 
@@ -230,8 +223,6 @@
 &lt;div class=&quot;language-c++ highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
 &lt;h3 id=&quot;부동-소수점-실수&quot;&gt;&lt;em&gt;부동 소수점 실수&lt;/em&gt;&lt;/h3&gt;
 &lt;p&gt;대부분의 경진 프로그래밍 대회는 정수만 사용해도 풀 수 있지만, 간혹 부동 소수점 실수가 필요할 때도 있다. 이 때 유용한 것이 64bit &lt;strong&gt;double&lt;/strong&gt; 이다. g++ 컴파일러는 80bit &lt;strong&gt;long double&lt;/strong&gt;도 지원한다.&lt;/p&gt;
 
@@ -255,8 +246,9 @@
 
 &lt;p&gt;부동 소수점 실수가 부정확하긴 하지만 특정 범위의 정수는 정확하게 표현 가능하다.&lt;/p&gt;
 
-&lt;h2 id=&quot;코드-짧게-만들기&quot;&gt;코드 짧게 만들기&lt;/h2&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;코드-짧게-만들기&quot;&gt;코드 짧게 만들기&lt;/h2&gt;
 
 &lt;h3 id=&quot;자료형&quot;&gt;&lt;em&gt;자료형&lt;/em&gt;&lt;/h3&gt;
 
@@ -268,8 +260,6 @@
 &lt;span class=&quot;k&quot;&gt;typedef&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vector&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;typedef&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pair&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;매크로&quot;&gt;&lt;em&gt;매크로&lt;/em&gt;&lt;/h3&gt;
 

@@ -25,7 +25,7 @@ version: 1.0.0
 # About/contact
 author:
   name: kiryan
-  description: 누구나 하나쯤은 가지고 있는 잡동사니,   <strong>잡동사니 기랸씨</strong> 입니다.
+  description: 누구나 하나쯤은 갖고 있는 잡동사니,  <strong>잡동사니 기랸씨</strong> 입니다.
   gravatar: 622f22d280319c07e62b73a391267ee5 # md5 hash of your email address
   contact:
     github:    https://github.com/kiryanchi
@@ -41,9 +41,6 @@ author:
 nav:
   Home:           
     - '/'
-  # 수정필요
-  # About Me:          
-  #   - '/about/'
   Algorithm:           
     - '/blog/algorithm/'
     # - { Programmers: '/blog/algorithm/#Programmers'}
@@ -51,15 +48,16 @@ nav:
     - '/blog/language/cpp'
     - { C++: '/blog/language/cpp/'}
     - { Python: '/blog/language/python/'}
-    # - { Tags: '/blog/tags/' }
+  About Me:          
+    - '/blog/aboutme/'
 
 # Where are tags and categories displayed
 tag_page: '/blog/tags/'
 category_page: '/blog/categories/'
 
 hero:
-  image: /public/img/we_will_be_giants_by_yalestewart.jpg
-  caption: Original Artwork &copy; <a href="http://yalestewart.deviantart.com/art/We-Will-Be-Giants-370176475">Yale Stewart</a>
+  image: /public/img/freedom.jpeg
+  caption: 큰 하늘을 향해 더 나아가자
 
 # Puglins
 mathjax: true # whether support mathjax
