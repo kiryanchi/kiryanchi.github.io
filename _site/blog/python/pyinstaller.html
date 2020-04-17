@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Pyinstaller "pyi_rth_pkgres”, "valueerror" 에러 해결법 &middot; 잡동사니 기랸씨
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/main.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  
+  <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_SVG"> </script>
+  <script type="text/x-mathjax-config">
+MathJax.Hub.Config({ tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ], processEscapes: true } });
+  </script>
+  
+</head>
+
+
+  <body>
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <div class="sidebar-personal-info">
+      <div class="sidebar-personal-info-section">
+        <a href="http://gravatar.com/622f22d280319c07e62b73a391267ee5">
+          <img src="http://www.gravatar.com/avatar/622f22d280319c07e62b73a391267ee5?s=350" title="View on Gravatar" alt="View on Gravatar" />
+        </a>
+      </div>
+      <div class="sidebar-personal-info-section">
+        <p>누구나 하나쯤은 가지고 있는 잡동사니,   <strong>잡동사니 기랸씨</strong> 입니다.</p>
+      </div>
+      
+      
+      
+      <div class="sidebar-personal-info-section">
+        <p> Follow me: 
+        
+        
+        
+        <a href="https://github.com/kiryanchi">
+          <i class="fa fa-github" aria-hidden="true"></i>
+        </a>
+        
+        |
+        
+        
+        
+        <a href="https://www.linkedin.com/in/kiryanchi">
+          <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </a>
+        
+        |
+        
+        
+        
+        <a href="https://www.instagram.com/kir_4n/">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+        
+        |
+        
+        
+        
+        <a href="mailto:kiryanchi@naver.com">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+        </a>
+        
+        
+        
+        </p>
+      </div>
+      
+    </div>
+  </div>
+
+  <nav class="sidebar-nav">
+    
+      
+      
+      
+
+      
+
+      <span class="">
+        <a class="sidebar-nav-item " href="/">
+          Home
+        </a>
+
+        
+      </span>
+
+    
+      
+      
+      
+
+      
+
+      <span class="">
+        <a class="sidebar-nav-item " href="/blog/algorithm/">
+          Algorithm
+        </a>
+
+        
+      </span>
+
+    
+      
+      
+      
+
+      
+
+      <span class="foldable">
+        <a class="sidebar-nav-item " href="/blog/language/cpp">
+          Language
+        </a>
+
+        
+          
+            
+            
+            
+              <a class="sidebar-nav-item sidebar-nav-item-sub " href="/blog/language/cpp/">
+                C++
+              </a>
+          
+        
+          
+            
+            
+            
+              <a class="sidebar-nav-item sidebar-nav-item-sub " href="/blog/language/python/">
+                Python
+              </a>
+          
+        
+      </span>
+
+    
+
+    
+  </nav>
+
+  <!-- <div class="sidebar-item">
+    <p>
+    &copy; 2020 kiryan. This work is liscensed under <a href="http://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>.
+    </p>
+  </div> -->
+
+  <div class="sidebar-item">
+    <p>
+    Powered by <a href="http://jekyllrb.com">jekyll</a> and <a href="http://codinfox.github.io">codinfox-lanyon</a>
+    </p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home" title="잡동사니 기랸씨">
+              <img class="masthead-logo" src="/public/logo.png"/>
+            </a>
+            <small>잡동사니 기랸씨</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="post">
+  <h1 class="post-title">Pyinstaller "pyi_rth_pkgres”, "valueerror" 에러 해결법</h1>
+  <span class="post-date">11 Apr 2020</span>
+   | 
+  
+    <a href="/blog/tags/#pyinstaller" class="post-tag">pyinstaller</a>
+  
+    <a href="/blog/tags/#pyi-rth-pkgres" class="post-tag">pyi_rth_pkgres</a>
+  
+    <a href="/blog/tags/#valueerror" class="post-tag">valueerror</a>
+  
+    <a href="/blog/tags/#python" class="post-tag">python</a>
+  
+  
+  <article>
+    <h1 id="pyinstaller-pyi_rth_pkgres-valueerror-에러-해결법">Pyinstaller “pyi_rth_pkgres”, “valueerror” 에러 해결법</h1>
+
+<h3 id="프로그램-작성-당시-개발환경">프로그램 작성 당시 개발환경</h3>
+<blockquote>
+  <p>Windows 10<br />
+Pycharm Professional Edition<br />
+Python 3.8.2 venv</p>
+</blockquote>
+
+<p>삼촌을 도와 간단한 알바를 하던 중 <a href="https://github.com/kiryanchi/excelphotoautomatic/">엑셀에 사진을 넣어야 하는 단순 반복 작업</a>이 있어서 Python을 사용해 프로그램을 만든 후,</p>
+
+<p>Pyinstaller 를 사용해 exe 파일로 만들려고 했다.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pyinstaller --onefile main.py
+</code></pre></div></div>
+
+<p>그러나 뿜어오는 Error Message</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Failed to execute script pyi_rth_pkgres
+</code></pre></div></div>
+
+<p>구글신의 힘을 빌려 검색을 해보니 pyinstaller 삭제 후, dev 버전을 다운받으라고 했다.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip uninstall pyinstaller
+pip install https://github.com/pyinstaller/pyinstaller/archive/develop.zip
+</code></pre></div></div>
+
+<p>그러나 이번엔 다른 문제에 부딪혔다.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>valueerror: can't mix absolute and relative paths
+</code></pre></div></div>
+
+<p>대충 해석하자면 절대경로와 상대경로를 섞어쓸 수 없다는 내용인데,</p>
+
+<p>구글에 검색해도 마땅히 해결법을 찾지 못 해 이리저리 자료를 찾던 중 <a href="https://github.com/pyinstaller/pyinstaller">pyinstaller github</a>에서 정답을 찾았다.</p>
+
+<h4 id="문제는-바로-내-파이썬-버전의-문제">문제는 바로 내 <strong><em>파이썬 버전의 문제</em></strong></h4>
+
+<p>현재 2020년 4월 11일자 파이썬 최신 버전은 3.8.2 버전이다.</p>
+
+<p>그러나 pyinstaller 는 파이썬 버전 3.7까지 지원한다.</p>
+
+<p>구글 검색을 통해 파이썬 3.7 버전을 설치한 뒤 파이참에서 새 프로젝트를 파이썬 3.7 버전으로 가상환경을 설치한 뒤 다시 pyinstaller 를 설치하고 exe 파일을 만들었더니 정상 작동을 확인했다.</p>
+
+<p>혹시나 macOS 에서 파이썬 버전을 관리하고 싶다면 homebrew 를 사용하는 편이 낫다.</p>
+
+<h1 id="결론">결론</h1>
+<p><a href="https://github.com/pyinstaller/pyinstaller">pyinstaller github</a> 에 들어가서 지원하는 파이썬 버전을 확인하고 내 파이썬 버전과 비교해보자.</p>
+
+  </article>
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/blog/algorithm/cpp2">
+            알고리즘 대회를 위한 공부 - 재귀
+            <small>12 Apr 2020</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/blog/algorithm/cpp1">
+            알고리즘 대회를 위한 공부 - C++ 기본 문법
+            <small>12 Apr 2020</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+
+<div class="comments">
+  <h2>Comments</h2>
+  <div id="disqus_thread"></div>
+  <script>
+var disqus_config = function () {
+  this.page.url = 'http://localhost:4000/blog/python/pyinstaller'; // Replace PAGE_URL with your page's canonical URL variable
+  this.page.identifier = '/blog/python/pyinstaller'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+(function() {
+  var d = document, s = d.createElement('script');
+  s.src = '//kiryanchi-github.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', +new Date());
+  (d.head || d.body).appendChild(s);
+})();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</div>
+
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if (target === toggle) {
+            checkbox.checked = !checkbox.checked;
+            e.preventDefault();
+          } else if (checkbox.checked && !sidebar.contains(target)) {
+            /* click outside the sidebar when sidebar is open */
+            checkbox.checked = false;
+          }
+        }, false);
+      })(document);
+    </script>
+    
+    <script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-00000000-1', 'auto');
+ga('send', 'pageview');
+    </script>
+    
+  </body>
+  
+  <script id="dsq-count-scr" src="//kiryanchi-github.disqus.com/count.js" async></script>
+  
+</html>

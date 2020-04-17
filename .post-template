@@ -1,0 +1,9 @@
+---
+layout: post
+title: 제목
+date: 
+category: 카테고리
+tags: ['ex1', 'ex2']
+permalink: '/blog/:categories/:title'
+---
+
