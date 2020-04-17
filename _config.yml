@@ -76,3 +76,4 @@ algolia:
   files_to_exclude       :
     - about.md
     - blog/aboutme.html
+    - index.html
