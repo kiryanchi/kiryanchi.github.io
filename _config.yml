@@ -49,6 +49,9 @@ nav:
     - '/blog/language/'
     - { C++: '/blog/language/cpp/'}
     - { Python: '/blog/language/python/'}
+  Project:
+    - '/blog/project/'
+    - { Excel: '/blog/project/excel/'}
   About Me:          
     - '/blog/aboutme/'
   Search:

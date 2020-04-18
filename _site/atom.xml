@@ -4,13 +4,73 @@
  <title>잡동사니 기랸씨</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2020-04-18T17:20:43+09:00</updated>
+ <updated>2020-04-19T01:14:38+09:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>kiryan</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>엑셀 사진 추가 프로그램</title>
+   <link href="http://localhost:4000/blog/excel/excel_base"/>
+   <updated>2020-04-19T00:00:00+09:00</updated>
+   <id>http://localhost:4000/blog/excel/excel_base</id>
+   <content type="html">&lt;p&gt;삼촌과 아빠의 요청으로 엑셀에 사진을 자동으로 추가하는 프로그램을 만들어보기로 했다.&lt;/p&gt;
+
+&lt;p&gt;내가 쓸 프로그램이라면 예외처리없이 사용법에 맞게 단순하게 짜면 되지만 그렇지 않기에 여러가지 조건을 생각했다.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;직관적인 사용법&lt;/li&gt;
+  &lt;li&gt;exe 파일&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;exe 파일이야 pyinstaller 로 해결한다지만, 직관적인 사용법은 cli 보다는 gui에 가깝기에 이번 기회에 gui 프로그래밍도 배워볼 겸 PyQt5 를 사용해보기로 했다.&lt;/p&gt;
+
+&lt;h2 id=&quot;1-구상&quot;&gt;1. 구상&lt;/h2&gt;
+
+&lt;h3 id=&quot;최초-게획&quot;&gt;최초 게획&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;엑셀의 원하는 셀 안에 사진을 넣어놓는다.&lt;/li&gt;
+  &lt;li&gt;셀 안의 사진을 인식해 크기를 키워서 셀 안에 다시 삽입한다.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;처음에는 엑셀에 사진을 넣고나서 프로그램을 실행시키면 셀 안의 사진을 자동으로 인식해 크기를 맞춰줄려고 했다.&lt;/p&gt;
+
+&lt;p&gt;하지만 오랜 구글링 끝에 나랑 비슷한 시도를 하려는 사람은 많았지만 성공한 사례는 보지 못 했다.&lt;/p&gt;
+
+&lt;p&gt;그렇게 오랜 구글링을 하던 중 다른 아이디어가 떠올랐다.&lt;/p&gt;
+
+&lt;p&gt;따라서 설계 방향을 급하게 바꿨다.&lt;/p&gt;
+
+&lt;h3 id=&quot;최종-계획&quot;&gt;최종 계획&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;작업전, 작업후 사진을 각각 불러온다.&lt;/li&gt;
+  &lt;li&gt;각각의 사진의 크기를 조정한다.&lt;/li&gt;
+  &lt;li&gt;사진을 원하는 셀에 삽입한다.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;이렇게 간단한 프로그램을 짜보니 대충 내가 구상한대로 프로그램이 작동했다.&lt;/p&gt;
+
+&lt;h2 id=&quot;2-코드&quot;&gt;2. 코드&lt;/h2&gt;
+
+&lt;p&gt;코드의 전문은 &lt;a href=&quot;https://github.com/kiryanchi/excelphotoautomatic/tree/ec03f19d96e4a881734513e393cba2c5e556456b&quot;&gt;Github&lt;/a&gt; 에서 볼 수 있습니다.&lt;/p&gt;
+
+&lt;h2 id=&quot;3-앞으로의-계획&quot;&gt;3. 앞으로의 계획&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;우선 PyQt5 의 사용법을 익힌다.&lt;/li&gt;
+  &lt;li&gt;프로그램의 큰 틀을 만든 뒤, 구현한다.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;글로만 적으니 되게 간단해보이지만 1 번 부터 쉽지 않아보인다. 그래도 자료가 충분하니 열심히 해보려고 한다.&lt;/p&gt;
+
+&lt;p&gt;PyQt5 의 기본이나 핵심은 이해가 가고 시간이 난다면 포스트를 올려볼까 생각중이다.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>algo test</title>
