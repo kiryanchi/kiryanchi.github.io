@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [PyQt5] 엑셀 자동 작업 프로그램 - 구상
+title: PyQt5 엑셀 자동 작업 프로그램 - 구상
 date: '2020-04-19'
 category: excel
 tags: ['Python', 'Excel', 'PyQt5']
