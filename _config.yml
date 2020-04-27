@@ -49,6 +49,7 @@ nav:
     - '/blog/language/'
     - { C++: '/blog/language/cpp/'}
     - { Python: '/blog/language/python/'}
+    - { Java: '/blog/language/java/'}
   Project:
     - '/blog/project/'
     - { Excel: '/blog/project/excel/'}
