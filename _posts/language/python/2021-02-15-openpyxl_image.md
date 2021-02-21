@@ -190,6 +190,6 @@ sheet._images.remove(delete_image)
 wb.save('out.xlsx')
 ```
 
-![example](assets/2021-02-15-openpyxl_image/example.png)
+![example](/assets/2021-02-15-openpyxl_image/example.png)
 
 사진이 정상적으로 삭제된 모습 (손은 우리 아빠 손이다)
