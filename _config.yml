@@ -1,83 +1,199 @@
-# Site Info
-title: 잡동사니 기랸씨
-tagline: '잡동사니 기랸씨'
-description: '이건 어따쓰냐?'
-baseurl: ""
-url: http://kiryanchi.github.io
-logo: '/public/logo.png'
+# The Site Configuration
 
-# Site configurations
-gems:
-  - jekyll-paginate
-  - jekyll-algolia
-markdown: kramdown
+# Import the theme
+theme: jekyll-theme-chirpy
+
+# Change the following value to '/PROJECT_NAME' ONLY IF your site type is GitHub Pages Project sites
+# and doesn't have a custom domain.
+baseurl: ""
+
+# The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
+# If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
+# otherwise, the layout language will use the default value of 'en'.
+lang: en
+
+# Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
+timezone: Asia/Seoul
+
+# jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
+# ↓ --------------------------
+
+title: 잡동사니 기랸씨 # the main title
+
+tagline: 잡동사니 개발자 # it will display as the sub-title
+
+description: >- # used by seo meta and the atom feed
+  누구나 하나쯤은 가지고 있는 잡동사니, 친근하게 다가가고 싶은 잡동사니 기랸씨입니다.
+
+# fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
+url: "https://kiryanchi.github.io"
+
+github:
+  username: kiryanchi # change to your github username
+
+twitter:
+  username: kiryanchi # change to your twitter username
+
+social:
+  # Change to your full name.
+  # It will be displayed as the default author of the posts and the copyright owner in the Footer
+  name: 박기현
+  email: kiryanchi@naver.com # change to your email address
+  links:
+    # The first element serves as the copyright owner's link
+    # - https://twitter.com/username # change to your twitter homepage
+    - https://github.com/kiryanchi # change to your github homepage
+    # Uncomment below to add more social links
+    # - https://www.facebook.com/username
+    # - https://www.linkedin.com/in/username
+
+google_site_verification: # fill in to your verification string
+
+# ↑ --------------------------
+# The end of `jekyll-seo-tag` settings
+
+google_analytics:
+  id: # fill in your Google Analytics ID
+  # Google Analytics pageviews report settings
+  pv:
+    proxy_endpoint: # fill in the Google Analytics superProxy endpoint of Google App Engine
+    cache_path: # the local PV cache data, friendly to visitors from GFW region
+
+# Prefer color scheme setting.
+#
+# Note: Keep empty will follow the system prefer color by default,
+# and there will be a toggle to switch the theme between dark and light
+# on the bottom left of the sidebar.
+#
+# Available options:
+#
+#     light  - Use the light color scheme
+#     dark   - Use the dark color scheme
+#
+theme_mode: light|dark # [light|dark]
+
+# The CDN endpoint for images.
+# Notice that once it is assigned, the CDN url
+# will be added to all image (site avatar & posts' images) paths starting with '/'
+#
+# e.g. 'https://cdn.com'
+img_cdn:
+
+# the avatar on sidebar, support local or CORS resources
+avatar:
+
+# boolean type, the global switch for ToC in posts.
+toc: true
+
+comments:
+  active: # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
+  # The active options are as follows:
+  disqus:
+    shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+  # utterances settings › https://utteranc.es/
+  utterances:
+    repo: # <gh-username>/<repo>
+    issue_term: # < url | pathname | title | ...>
+  # Giscus options › https://giscus.app
+  giscus:
+    repo: # <gh-username>/<repo>
+    repo_id:
+    category:
+    category_id:
+    mapping: # optional, default to 'pathname'
+    input_position: # optional, default to 'bottom'
+    lang: # optional, default to the value of `site.lang`
+    reactions_enabled: # optional, default to the value of `1`
+
+# Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
+assets:
+  self_host:
+    enabled: # boolean, keep empty means false
+    # specify the Jekyll environment, empty means both
+    # only works if `assets.self_host.enabled` is 'true'
+    env: # [development|production]
+
+pwa:
+  enabled: true # the option for PWA feature
+
+paginate: 10
+
+# ------------ The following options are not recommended to be modified ------------------
+
 kramdown:
-  input: GFM
-excerpt_separator: "<!-- more -->"
+  syntax_highlighter: rouge
+  syntax_highlighter_opts: # Rouge Options › https://github.com/jneen/rouge#full-options
+    css_class: highlight
+    # default_lang: console
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+collections:
+  tabs:
+    output: true
+    sort_by: order
+
+defaults:
+  - scope:
+      path: "" # An empty string here means all files in the project
+      type: posts
+    values:
+      layout: post
+      comments: true # Enable comments in posts.
+      toc: true # Display TOC column in posts.
+      # DO NOT modify the following parameter unless you are confident enough
+      # to update the code of all other post links in this project.
+      permalink: /posts/:title/
+  - scope:
+      path: _drafts
+    values:
+      comments: false
+  - scope:
+      path: ""
+      type: tabs # see `site.collections`
+    values:
+      layout: page
+      permalink: /:title/
+  - scope:
+      path: assets/img/favicons
+    values:
+      swcache: true
+  - scope:
+      path: assets/js/dist
+    values:
+      swcache: true
+
 sass:
   style: compressed
-  sass_dir: _scss    
-paginate: 5
-paginate_path: '/blog/page:num'
-permalink: pretty
 
-version: 1.0.0
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    envs: [development]
 
-# About/contact
-author:
-  name: kiryan
-  description: 누구나 하나쯤은 갖고 있는 잡동사니,  <strong>잡동사니 기랸씨</strong> 입니다.
-  gravatar: 622f22d280319c07e62b73a391267ee5 # md5 hash of your email address
-  contact:
-    github:    https://github.com/kiryanchi
-    linkedin:  https://www.linkedin.com/in/kiryanchi
-    # facebook:  <hide>
-    # twitter:   https://twitter.com/Li_Zhihao
-    # weibo:     http://weibo.com/41173780
-    instagram: https://www.instagram.com/kir_4n/
-    email:     mailto:kiryanchi@naver.com
-    
+exclude:
+  - "*.gem"
+  - "*.gemspec"
+  - tools
+  - README.md
+  - CHANGELOG.md
+  - LICENSE
+  - gulpfile.js
+  - node_modules
+  - package*.json
 
-# Navigation (2nd level links supported)
-nav:
-  Home:           
-    - '/'
-  Algorithm:           
-    - '/blog/algorithm/'
-    # - { Programmers: '/blog/algorithm/#Programmers'}
-  Language:
-    - '/blog/language/'
-    - { C++: '/blog/language/cpp/'}
-    - { Python: '/blog/language/python/'}
-    - { Java: '/blog/language/java/'}
-  Project:
-    - '/blog/project/'
-    - { Excel: '/blog/project/excel/'}
-  About Me:          
-    - '/blog/aboutme/'
-  Search:
-    - '/blog/search/'
-
-# Where are tags and categories displayed
-tag_page: '/blog/tags/'
-category_page: '/blog/categories/'
-
-hero:
-  image: /public/img/freedom.jpeg
-  caption: 큰 하늘을 향해 더 나아가자
-
-# Puglins
-mathjax: true # whether support mathjax
-google_analytics_token: 'UA-00000000-1' # leave blank if you don't want google analytics
-disqus_short_name: 'kiryanchi-github' # leave blank if you don't want disqus
-
-# search algolia
-algolia:
-  application_id         : U7YXE6JR1D # YOUR_APPLICATION_ID
-  index_name             : my_blog # YOUR_INDEX_NAME
-  search_only_api_key    : d36be1652e26fdbec52ded53ffb80807 # YOUR_SEARCH_ONLY_API_KEY
-  powered_by             : false # true (default), false
-  files_to_exclude       :
-    - about.md
-    - blog/aboutme.html
-    - index.html
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/
