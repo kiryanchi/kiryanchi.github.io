@@ -1,5 +1,5 @@
 ---
-title: Clean Code ~Ch.6
+title: Clean Code ~Ch.5
 author: ryan park
 date: 2023-09-20 +0800
 categories: [Book, Clean Code]
